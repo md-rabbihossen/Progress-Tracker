@@ -637,7 +637,7 @@ function getWeekDateRange(weekNumber) {
 }
 
 // --- TodayTasksSection ---
-const TodayTasksSection = ({ tasks, onAddTask, onToggleTask, todayString }) => {
+const TodayTasksSection = ({ tasks, onAddTask, onToggleTask }) => {
   const visibleTasks = tasks.filter((task) => !task.completed);
   const completedCount = tasks.length - visibleTasks.length;
   const progress = tasks.length > 0 ? (completedCount / tasks.length) * 100 : 0;
@@ -646,12 +646,9 @@ const TodayTasksSection = ({ tasks, onAddTask, onToggleTask, todayString }) => {
   return (
     <section className="mb-12">
       <div className="bg-white rounded-lg p-4 shadow-2xl ring-1 ring-gray-100">
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-between items-center mb-4 gap-2">
           <h2 className="text-2xl sm:text-3xl font-bold text-black">
             Today's Tasks ({remainingCount})
-            <span className="ml-2 text-base font-normal text-gray-500">
-              • {todayString}
-            </span>
           </h2>
           <span className="text-xl font-mono font-bold text-black">
             {progress.toFixed(2)}%
@@ -838,29 +835,36 @@ export default function App() {
       )
     ) {
       localStorage.removeItem("roadmapProgress");
-      localStorage.removeItem("todayTasks");
       setRoadmap(getInitialRoadmapData());
-      setTodayTasks([]);
     }
   };
 
   return (
     <div className="bg-white min-h-screen font-sans text-gray-800">
       <div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
-        <header className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2">
-            React & Next.js Developer Roadmap
-          </h1>
-          <p className="text-lg text-gray-600">
-            Your 26-Week Journey to Becoming a Pro
-          </p>
+        <header className="flex justify-between items-center mb-8">
+          <div className="flex items-center gap-3">
+            <img
+              src="/assets/logo.png"
+              alt="Logo"
+              className="w-10 h-10 object-contain"
+            />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2">
+              Roadmap
+            </h1>
+          </div>
+          <span className="text-base font-normal text-bold-800 whitespace-nowrap ml-4">
+            {getTodayString()}
+          </span>
         </header>
+        <p className="text-lg text-gray-600 text-center mb-8 -mt-6">
+          Your 26-Week Journey to Becoming a Pro
+        </p>
 
         <TodayTasksSection
           tasks={todayTasks}
           onAddTask={handleAddTodayTask}
           onToggleTask={handleToggleTodayTask}
-          todayString={getTodayString()}
         />
 
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-10 sticky top-4 z-10 backdrop-blur-sm bg-opacity-70">
