@@ -1,7 +1,7 @@
 {
-  "name": "Your App Name",
-  "short_name": "App",
-  "description": "Your app description here",
+  "name": "Progress Tracker",
+  "short_name": "Tracker",
+  "description": "Progress Tracker",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
