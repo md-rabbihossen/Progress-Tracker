@@ -10,12 +10,12 @@ const getInitialRoadmapData = () => {
   let data = [
     // Phase 1
     {
-      phase: "Phase 1: Mastering Modern JavaScript",
+      phase: "Phase 1: JavaScript Refresher & React Basics",
       duration: "Weeks 1-4",
       weeks: [
         {
           week: 1,
-          title: "JavaScript Fundamentals & Core Concepts",
+          title: "JavaScript Refresher",
           topics: [
             { text: "Review: let, const, var, and scope", completed: false },
             {
@@ -23,469 +23,519 @@ const getInitialRoadmapData = () => {
               completed: false,
             },
             {
-              text: "Functions: Declarations, Expressions, Arrow Functions, `this` keyword",
+              text: "Arrow Functions & 'this' keyword",
               completed: false,
             },
-            { text: "Control Flow: Conditionals and loops", completed: false },
+            { text: "Spread & Rest Operators", completed: false },
             {
-              text: "Error Handling with try...catch...finally",
+              text: "Destructuring Arrays & Objects",
               completed: false,
             },
           ],
         },
         {
           week: 2,
-          title: "Data Structures & DOM Interaction",
+          title: "React Basics & Working With Components",
           topics: [
             {
-              text: "Arrays & methods (map, filter, reduce, find, etc.)",
+              text: "What is React & Why Use It?",
               completed: false,
             },
             {
-              text: "Objects: Properties, methods, destructuring, spread operator",
+              text: "Creating a React Project with Vite",
               completed: false,
             },
             {
-              text: "JSON: JSON.stringify() and JSON.parse()",
+              text: "JSX - Writing React Code",
               completed: false,
             },
             {
-              text: "DOM Manipulation (querySelector, createElement, etc.)",
+              text: "Building Custom Components",
               completed: false,
             },
             {
-              text: "Events: Event listeners, event object, event delegation",
+              text: "Working with Props",
               completed: false,
             },
           ],
         },
         {
           week: 3,
-          title: "Asynchronous JavaScript",
+          title: "React State & Working with Events",
           topics: [
-            { text: "The Event Loop concept", completed: false },
-            { text: "Callbacks and Callback Hell", completed: false },
+            { text: "Handling Events with Props", completed: false },
+            { text: "Working with 'useState' Hook", completed: false },
             {
-              text: "Promises: .then(), .catch(), .finally()",
+              text: "Multiple States & State Objects",
               completed: false,
             },
-            { text: "Focus: async/await", completed: false },
-            { text: "The Fetch API for making requests", completed: false },
+            { text: "Two-Way Binding", completed: false },
+            {
+              text: "Child-to-Parent Component Communication",
+              completed: false,
+            },
           ],
         },
         {
           week: 4,
-          title: "ES6+, Modules, and Tooling",
+          title: "Rendering Lists & Conditional Content",
           topics: [
             {
-              text: "ES6+ Features: Template Literals, Optional Chaining, Nullish Coalescing",
+              text: "Rendering Lists of Data with map()",
               completed: false,
             },
-            { text: "JavaScript Modules: import/export", completed: false },
+            { text: "Using Stateful Lists", completed: false },
             {
-              text: "Intro to npm/yarn (package management)",
+              text: "Understanding 'keys' in Lists",
               completed: false,
             },
-            { text: "Basic command-line proficiency", completed: false },
+            { text: "Conditional Rendering Techniques", completed: false },
+            { text: "Dynamic Styles & CSS Classes", completed: false },
           ],
         },
       ],
     },
     // Phase 2
     {
-      phase: "Phase 2: React - Describing the UI",
-      duration: "Weeks 5-7",
+      phase: "Phase 2: React Deep Dive",
+      duration: "Weeks 5-9",
       weeks: [
         {
           week: 5,
-          title: "Your First Component & JSX",
+          title: "Styling React Components",
           topics: [
-            { text: "Understand React as a library for UIs", completed: false },
-            { text: "Create and nest components", completed: false },
-            { text: "Learn JSX syntax and rules", completed: false },
+            { text: "Conditional & Dynamic Styles", completed: false },
+            { text: "CSS Modules", completed: false },
+            { text: "Styled Components", completed: false },
             {
-              text: "Use curly braces in JSX for expressions",
+              text: "Tailwind CSS with React",
               completed: false,
             },
-            { text: "Setting up a project with Vite", completed: false },
+            { text: "CSS-in-JS Approaches", completed: false },
           ],
         },
         {
           week: 6,
-          title: "Props, Conditional Rendering & Lists",
+          title: "Debugging & Error Boundaries",
           topics: [
-            { text: "Passing props to a component", completed: false },
+            { text: "Understanding React Error Messages", completed: false },
             {
-              text: "Conditional rendering: if, &&, ternary operator",
+              text: "Using React DevTools",
               completed: false,
             },
-            { text: "Rendering lists with .map()", completed: false },
+            { text: "Working with Breakpoints", completed: false },
             {
-              text: "Understanding and using `key` prop for lists",
+              text: "Error Boundaries",
               completed: false,
             },
-            { text: "Keeping components pure", completed: false },
+            { text: "Handling Runtime Errors", completed: false },
           ],
         },
         {
           week: 7,
-          title: "Project: Build a Static UI",
+          title: "Side Effects, Reducers & Context API",
           topics: [
             {
-              text: "Build a static version of an app like a recipe list or contact card list",
+              text: "Working with useEffect Hook",
               completed: false,
             },
             {
-              text: "Break the UI into a component hierarchy",
+              text: "useEffect Dependencies & Cleanup",
               completed: false,
             },
-            { text: "Use props to pass data down the tree", completed: false },
-            { text: "Style with Tailwind CSS", completed: false },
+            { text: "useReducer for Complex State", completed: false },
+            { text: "React Context API", completed: false },
+            { text: "Building Custom Context Providers", completed: false },
+          ],
+        },
+        {
+          week: 8,
+          title: "React Behind The Scenes",
+          topics: [
+            {
+              text: "How React Works Behind The Scenes",
+              completed: false,
+            },
+            {
+              text: "Virtual DOM & Reconciliation",
+              completed: false,
+            },
+            {
+              text: "Optimization with React.memo",
+              completed: false,
+            },
+            { text: "useMemo & useCallback Hooks", completed: false },
+            { text: "State Scheduling & Batching", completed: false },
+          ],
+        },
+        {
+          week: 9,
+          title: "Class Components & Lifecycle Methods",
+          topics: [
+            {
+              text: "Class-based Components Syntax",
+              completed: false,
+            },
+            {
+              text: "Component Lifecycle Methods",
+              completed: false,
+            },
+            {
+              text: "Error Boundaries with Class Components",
+              completed: false,
+            },
+            {
+              text: "Context API with Class Components",
+              completed: false,
+            },
+            {
+              text: "When to Use Class vs. Functional Components",
+              completed: false,
+            },
           ],
         },
       ],
     },
     // Phase 3
     {
-      phase: "Phase 3: React - Adding Interactivity & Managing State",
-      duration: "Weeks 8-12",
+      phase: "Phase 3: Advanced React Features",
+      duration: "Weeks 10-14",
       weeks: [
         {
-          week: 8,
-          title: "Responding to Events & State",
-          topics: [
-            { text: "Handling events (e.g., onClick)", completed: false },
-            {
-              text: "Introduction to State: The `useState` Hook",
-              completed: false,
-            },
-            {
-              text: "Understand that state is isolated and private",
-              completed: false,
-            },
-            { text: "Queuing state updates", completed: false },
-            { text: "Updating objects and arrays in state", completed: false },
-          ],
-        },
-        {
-          week: 9,
-          title: "Project: Adding Interactivity",
-          topics: [
-            {
-              text: "Take the static project from Week 7 and add state",
-              completed: false,
-            },
-            {
-              text: "Implement event handlers to modify state",
-              completed: false,
-            },
-            {
-              text: "Create interactive forms with controlled components",
-              completed: false,
-            },
-            { text: "Practice updating state immutably", completed: false },
-          ],
-        },
-        {
           week: 10,
-          title: "Managing State: Sharing & Preserving",
+          title: "Sending HTTP Requests",
           topics: [
-            { text: "Sharing state by 'lifting state up'", completed: false },
-            { text: "Understand 'State as a Snapshot'", completed: false },
+            { text: "Connecting to Backend APIs", completed: false },
+            { text: "Using fetch() & useEffect", completed: false },
             {
-              text: "Preserving and resetting state when conditional rendering",
+              text: "Handling Loading & Error States",
               completed: false,
             },
-            { text: "Choosing the right state structure", completed: false },
+            { text: "POST Requests & Form Submission", completed: false },
+            { text: "Custom HTTP Hook", completed: false },
           ],
         },
         {
           week: 11,
-          title: "Managing State: Reducers & Context",
+          title: "Building Custom Hooks",
           topics: [
             {
-              text: "Consolidate state logic with the `useReducer` Hook",
+              text: "Creating Your First Custom Hook",
               completed: false,
             },
+            { text: "Custom Hook Rules & Best Practices", completed: false },
             {
-              text: "Passing data deeply with the `useContext` Hook",
+              text: "Reusable Logic with Custom Hooks",
               completed: false,
             },
-            {
-              text: "Combining `useReducer` and `useContext` for complex state",
-              completed: false,
-            },
-            { text: "Compare with 'lifting state up'", completed: false },
+            { text: "Building a HTTP Custom Hook", completed: false },
+            { text: "Building a Form Custom Hook", completed: false },
           ],
         },
         {
           week: 12,
-          title: "React Escape Hatches",
+          title: "Working with Forms & User Input",
           topics: [
             {
-              text: "Synchronizing with external systems using `useEffect`",
+              text: "Handling Form Submission",
               completed: false,
             },
             {
-              text: "Understanding the `useEffect` dependency array",
+              text: "Input Validation & Feedback",
               completed: false,
             },
-            { text: "Creating your own custom Hooks", completed: false },
-            { text: "Learn about other hooks like `useRef`", completed: false },
+            {
+              text: "Form Actions (React 19)",
+              completed: false,
+            },
+            { text: "Working with useRef for Inputs", completed: false },
+            { text: "Form Libraries Overview", completed: false },
+          ],
+        },
+        {
+          week: 13,
+          title: "React Router",
+          topics: [
+            {
+              text: "Client-Side Routing Concepts",
+              completed: false,
+            },
+            {
+              text: "Setting up React Router",
+              completed: false,
+            },
+            { text: "Dynamic Routes & Parameters", completed: false },
+            {
+              text: "Nested Routes & Layouts",
+              completed: false,
+            },
+            { text: "Navigation & Programmatic Navigation", completed: false },
+          ],
+        },
+        {
+          week: 14,
+          title: "Advanced React Router",
+          topics: [
+            {
+              text: "Data Loading with React Router",
+              completed: false,
+            },
+            {
+              text: "Form Handling with React Router",
+              completed: false,
+            },
+            { text: "Protected Routes & Authentication", completed: false },
+            {
+              text: "Error Handling in Routes",
+              completed: false,
+            },
+            { text: "Lazy Loading & Code Splitting", completed: false },
           ],
         },
       ],
     },
     // Phase 4
     {
-      phase: "Phase 4: Entering the World of Next.js",
-      duration: "Weeks 13-17",
+      phase: "Phase 4: State Management & Redux",
+      duration: "Weeks 15-18",
       weeks: [
         {
-          week: 13,
-          title: "State Management Libraries & Routers",
-          topics: [
-            {
-              text: "Learn and implement Zustand (modern & simple)",
-              completed: false,
-            },
-            { text: "Understand Redux Toolkit concepts", completed: false },
-            {
-              text: "Implement React Router v6 for client-side routing",
-              completed: false,
-            },
-          ],
-        },
-        {
-          week: 14,
-          title: "Introduction to Next.js",
-          topics: [
-            {
-              text: "The 'why' behind Next.js (SSR, SSG, SEO)",
-              completed: false,
-            },
-            {
-              text: "Focus on the App Router (new standard)",
-              completed: false,
-            },
-            {
-              text: "File-based Routing (page.js, layout.js, etc.)",
-              completed: false,
-            },
-            { text: "Linking with next/link", completed: false },
-          ],
-        },
-        {
           week: 15,
-          title: "Data Fetching in Next.js",
+          title: "Redux Introduction",
           topics: [
+            { text: "Redux Core Concepts", completed: false },
+            { text: "Setting up Redux Store", completed: false },
             {
-              text: "Server Components vs. Client Components",
+              text: "Actions, Reducers & State",
               completed: false,
             },
-            { text: "Fetching data in Server Components", completed: false },
-            { text: "Static Site Generation (SSG)", completed: false },
-            {
-              text: "Server-Side Rendering (SSR) and dynamic rendering",
-              completed: false,
-            },
-            { text: "Data Caching and Revalidation", completed: false },
+            { text: "Connecting Redux to React", completed: false },
+            { text: "Redux DevTools", completed: false },
           ],
         },
         {
           week: 16,
-          title: "Next.js Features & Styling",
+          title: "Advanced Redux & Redux Toolkit",
           topics: [
-            { text: "API Routes for backend endpoints", completed: false },
-            { text: "Image Optimization with <Image>", completed: false },
-            { text: "Font Optimization with next/font", completed: false },
-            { text: "Metadata API for SEO", completed: false },
+            {
+              text: "Redux Toolkit Setup",
+              completed: false,
+            },
+            {
+              text: "createSlice & configureStore",
+              completed: false,
+            },
+            { text: "Thunks for Async Logic", completed: false },
+            {
+              text: "RTK Query for API Calls",
+              completed: false,
+            },
+            {
+              text: "Redux vs. Context API - When to Use What",
+              completed: false,
+            },
           ],
         },
         {
           week: 17,
-          title: "Intermediate Next.js Project: Portfolio",
+          title: "React Query & Tanstack Query",
           topics: [
             {
-              text: "Build a professional developer portfolio",
+              text: "Setting up React Query",
               completed: false,
             },
             {
-              text: "Make it statically generated (SSG) for performance",
+              text: "Queries, Mutations & Query Invalidation",
               completed: false,
             },
-            { text: "Optimize for SEO with metadata", completed: false },
-            { text: "Deploy to Vercel with a custom domain", completed: false },
+            {
+              text: "Caching & Stale Data",
+              completed: false,
+            },
+            { text: "Pagination & Infinite Queries", completed: false },
+            { text: "Optimistic Updates", completed: false },
+          ],
+        },
+        {
+          week: 18,
+          title: "Authentication in React Apps",
+          topics: [
+            {
+              text: "Authentication Concepts & JWT",
+              completed: false,
+            },
+            {
+              text: "Managing Auth State",
+              completed: false,
+            },
+            { text: "Protecting Routes", completed: false },
+            {
+              text: "Auto Logout & Token Refresh",
+              completed: false,
+            },
+            { text: "Persisting Auth State", completed: false },
           ],
         },
       ],
     },
     // Phase 5
     {
-      phase: "Phase 5: Full-Stack Next.js & Advanced Concepts",
-      duration: "Weeks 18-21",
+      phase: "Phase 5: Next.js & React Server Components",
+      duration: "Weeks 19-22",
       weeks: [
         {
-          week: 18,
-          title: "Authentication",
-          topics: [
-            {
-              text: "Understand authentication patterns (JWT, sessions)",
-              completed: false,
-            },
-            { text: "Implement NextAuth.js", completed: false },
-            { text: "Add Social Logins (Google, GitHub)", completed: false },
-            { text: "Protect pages and API routes", completed: false },
-          ],
-        },
-        {
           week: 19,
-          title: "Database Integration with Prisma",
+          title: "Next.js Fundamentals",
           topics: [
-            { text: "Intro to databases (SQL vs. NoSQL)", completed: false },
-            { text: "Set up a database with Supabase", completed: false },
+            { text: "Why Next.js & Project Setup", completed: false },
+            { text: "File-based Routing", completed: false },
             {
-              text: "Learn Prisma ORM to interact with the database",
+              text: "Pages vs. App Router",
               completed: false,
             },
-            { text: "Create a database schema", completed: false },
+            { text: "Pre-rendering & Data Fetching", completed: false },
+            { text: "API Routes", completed: false },
           ],
         },
         {
           week: 20,
-          title: "Full-Stack Capstone Project (Build)",
+          title: "Next.js App Router",
           topics: [
             {
-              text: "Choose a project (Job Board, Forum, etc.)",
+              text: "App Router Structure & Conventions",
               completed: false,
             },
             {
-              text: "Set up the full stack: Next.js, NextAuth, Prisma, DB",
+              text: "Layouts & Nested Layouts",
               completed: false,
             },
+            { text: "Route Groups & Dynamic Routes", completed: false },
             {
-              text: "Build core CRUD functionality (Create, Read, Update, Delete)",
+              text: "Loading & Error UI",
               completed: false,
             },
+            { text: "Metadata API for SEO", completed: false },
           ],
         },
         {
           week: 21,
-          title: "Full-Stack Capstone Project (Polish & Deploy)",
+          title: "React Server Components",
           topics: [
             {
-              text: "Add loading states (spinners/skeletons)",
+              text: "Server vs. Client Components",
               completed: false,
             },
             {
-              text: "Implement robust error handling (e.g., react-hot-toast)",
+              text: "Data Fetching in Server Components",
               completed: false,
             },
-            { text: "Ensure full mobile responsiveness", completed: false },
-            { text: "Run Lighthouse audit and optimize", completed: false },
-            { text: "Deploy with a production database", completed: false },
+            {
+              text: "Server Actions",
+              completed: false,
+            },
+            { text: "Streaming & Suspense", completed: false },
+            { text: "Optimizing with Server Components", completed: false },
+          ],
+        },
+        {
+          week: 22,
+          title: "Next.js Advanced Features",
+          topics: [
+            {
+              text: "Authentication with NextAuth.js",
+              completed: false,
+            },
+            {
+              text: "Image & Font Optimization",
+              completed: false,
+            },
+            { text: "Internationalization (i18n)", completed: false },
+            {
+              text: "Middleware & Edge Functions",
+              completed: false,
+            },
+            { text: "Deployment & Production Optimization", completed: false },
           ],
         },
       ],
     },
     // Phase 6
     {
-      phase: "Phase 6: Job & Freelance Preparation",
-      duration: "Weeks 22-26",
+      phase: "Phase 6: Testing, TypeScript & Best Practices",
+      duration: "Weeks 23-26",
       weeks: [
         {
-          week: 22,
-          title: "Building Your Brand",
-          topics: [
-            { text: "Polish portfolio with 3 best projects", completed: false },
-            {
-              text: "Write excellent READMEs for each project on GitHub",
-              completed: false,
-            },
-            { text: "Create a professional one-page resume", completed: false },
-            { text: "Optimize LinkedIn profile", completed: false },
-          ],
-        },
-        {
           week: 23,
-          title: "The Freelance Launchpad",
+          title: "Testing React Applications",
           topics: [
-            { text: "Create profiles on Upwork and Fiverr", completed: false },
+            { text: "Jest & React Testing Library Setup", completed: false },
+            { text: "Component Testing Basics", completed: false },
             {
-              text: "Research and practice writing winning proposals",
+              text: "Testing Hooks & Custom Hooks",
               completed: false,
             },
-            {
-              text: "Create specific, service-based gigs on Fiverr",
-              completed: false,
-            },
-            {
-              text: "Send 10-15 high-quality proposals on Upwork",
-              completed: false,
-            },
+            { text: "Mocking API Calls", completed: false },
+            { text: "Integration & E2E Testing", completed: false },
           ],
         },
         {
           week: 24,
-          title: "Mastering the Technical Interview",
+          title: "React with TypeScript",
           topics: [
             {
-              text: "Revisit core JS concepts (event loop, closures, etc.)",
+              text: "TypeScript Basics for React",
               completed: false,
             },
             {
-              text: "Practice common React interview questions",
+              text: "Typing Props & State",
               completed: false,
             },
+            { text: "Typing Hooks & Events", completed: false },
             {
-              text: "Solve LeetCode (Easy/Medium) problems (Arrays, Strings, Hashmaps)",
+              text: "Generic Components",
               completed: false,
             },
-            {
-              text: "Conduct mock interviews with peers or on platforms",
-              completed: false,
-            },
+            { text: "TypeScript with Redux & Context", completed: false },
           ],
         },
         {
           week: 25,
-          title: "The Job Application Offensive",
+          title: "React Patterns & Best Practices",
           topics: [
             {
-              text: "Target 3-5 quality remote job applications per day",
+              text: "Component Composition Patterns",
               completed: false,
             },
             {
-              text: "Use LinkedIn, We Work Remotely, RemoteOK, Arc.dev",
+              text: "Render Props & Higher-Order Components",
               completed: false,
             },
             {
-              text: "Write a short, customized cover letter for each application",
+              text: "Performance Optimization Techniques",
               completed: false,
             },
-            {
-              text: "Track all applications in a spreadsheet",
-              completed: false,
-            },
+            { text: "State Management Patterns", completed: false },
+            { text: "Project Structure & Organization", completed: false },
           ],
         },
         {
           week: 26,
-          title: "Continuous Improvement & First Contact",
+          title: "Animations & Deployment",
           topics: [
             {
-              text: "Make a small contribution to an open-source project",
-              completed: false,
-            },
-            { text: "Network on LinkedIn and Twitter", completed: false },
-            {
-              text: "Build another small project or write a blog post",
+              text: "CSS Transitions & Animations",
               completed: false,
             },
             {
-              text: "Review and refine portfolio/resume based on feedback",
+              text: "React Transition Group",
               completed: false,
             },
+            { text: "Framer Motion Basics", completed: false },
+            {
+              text: "Deployment Options & CI/CD",
+              completed: false,
+            },
+            { text: "Performance Monitoring & Analytics", completed: false },
           ],
         },
       ],
@@ -635,6 +685,50 @@ function getWeekDateRange(weekNumber) {
   const endStr = `${end.getDate()} ${months[end.getMonth()]}`;
   return `${startStr} - ${endStr}`;
 }
+
+// Countdown Timer Component
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState("");
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const midnight = new Date(now);
+      midnight.setHours(24, 0, 0, 0);
+
+      const difference = midnight - now;
+
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((difference / (1000 * 60)) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);
+
+      return {
+        hours: hours.toString().padStart(2, "0"),
+        minutes: minutes.toString().padStart(2, "0"),
+        seconds: seconds.toString().padStart(2, "0"),
+      };
+    };
+
+    const updateTimer = () => {
+      const time = calculateTimeLeft();
+      setTimeLeft(`${time.hours} : ${time.minutes} : ${time.seconds}`);
+    };
+
+    // Initial call
+    updateTimer();
+
+    // Update every second
+    const timerId = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(timerId);
+  }, []);
+
+  return (
+    <div className="text-base font-mono text-gray-800 whitespace-nowrap">
+      {timeLeft}
+    </div>
+  );
+};
 
 // --- TodayTasksSection ---
 const TodayTasksSection = ({ tasks, onAddTask, onToggleTask }) => {
@@ -853,9 +947,12 @@ export default function App() {
               Roadmap
             </h1>
           </div>
-          <span className="text-base font-normal text-bold-800 whitespace-nowrap ml-4">
-            {getTodayString()}
-          </span>
+          <div className="flex flex-col items-end">
+            <span className="text-base font-normal text-bold-800 whitespace-nowrap">
+              {getTodayString()}
+            </span>
+            <CountdownTimer />
+          </div>
         </header>
         <p className="text-lg text-gray-600 text-center mb-8 -mt-6">
           Your 26-Week Journey to Becoming a Pro
